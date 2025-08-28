@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>میری ویب سائٹ</title>
+  <meta name="description" content="آپ کے لیے مفت، سادہ اور خوبصورت ون پیج ویب سائٹ ٹیمپلیٹ" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face { font-family: 'NotoNastaliq'; src: url('https://fonts.gstatic.com/s/notonastaliqurduregular/v25/AlZy_zVFtYP12Zncg2kt9o6t0mY.woff2') format('woff2'); font-display: swap; }
+    body { font-family: NotoNastaliq, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(10px); }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-slate-100 text-slate-800">
+  <header class="sticky top-0 z-50 bg-white/70 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <span class="inline-block w-9 h-9 rounded-2xl bg-slate-900 text-white grid place-items-center text-lg">لوگو</span>
+        <span class="font-bold text-xl">میری ویب سائٹ</span>
+      </a>
+      <button id="menuBtn" class="md:hidden px-3 py-2 border rounded-xl">مینُو</button>
+      <nav id="nav" class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:underline">تعرف</a>
+        <a href="#services" class="hover:underline">خدمات</a>
+        <a href="#work" class="hover:underline">کام</a>
+        <a href="#contact" class="hover:underline">رابطہ</a>
+      </nav>
+    </div>
+  </header>
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-20">
+      <h1 class="text-4xl font-extrabold">میری پہلی ویب سائٹ</h1>
+      <p class="mt-4 text-lg">یہ ویب سائٹ Netlify پر بالکل مفت چل سکتی ہے۔</p>
+    </div>
+  </section>
+  <footer class="py-10 text-center text-sm">
+    <p>© <span id="year"></span> میری ویب سائٹ</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
